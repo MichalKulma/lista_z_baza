@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+#nazwa{
+    height: 15px;
+    width: 100px;
+}
+#wykon{
+    height: 15px;
+    width: 100px;
+}
+#termin{
+    height: 15px;
+    width: 100px;
+}
+#przycisk{
+    height: 30px;
+    width: 100px;
+}
