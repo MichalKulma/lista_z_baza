@@ -31,18 +31,18 @@ res.send(result)
 })
 
 app.get('/dodawanie/:nazwa/:wykon/:termin',function(req,res){
-const nazwa=req.params.nazwa
-const wykon=req.params.wykon
-const termin=req.params.termin
-     con.query('INSERT INTO tabela (nazwa,wykon,termin) VALUES (nazwa,wykon,termin)',function(err,result,fields){
+    const nazwa=req.params.nazwa
+    const wykon=req.params.wykon
+    const termin=req.params.termin
+    con.query(`INSERT INTO tabela (nazwa,wykon,termin) VALUES ('${nazwa}','${wykon}','${termin}')`,function(err,result,fields){
         if(err) {console.log(err)
-     res.send("źle")
+            res.send("nie dodano")
         }
-        else res.send("dobrze")
-     })
-    
+        else res.send("dodano")
+    })
+
     })
 
 
 
-app.listen(3000)
+app.listen(3001)

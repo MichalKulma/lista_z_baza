@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lista z baza</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
-<input type="text" id="nazwa">
+    <div id="gora">
 
-<input type="text" id="wykon">
+        <input type="text" id="nazwa">
+        
+        <input  id="wykon">
+        
+        <input id="termin">    
+        <button onclick="dodaj()" id="przycisk">dodaj zadanie</button>
+    </div>
 
-<input type="text" id="termin">    
-<button onclick="dodaj()" id="przycisk">dodaj zadanie</button>
+    <div id="dol"><canvas id="acquisitions"></canvas></div>
 
-
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
+    
+    <script type="JavaScript" src="wykres.js"></script>
+    
 </body>
 </html>

@@ -1,10 +1,26 @@
 body{
+    display: grid;
+    grid-template-areas:
+    "gora"
+    "dol";
+    grid-template-columns: 100%;
+    grid-template-rows: 60vh 40vh;
     margin: 0px;
+}
+#gora{
+    grid-area: gora;
+    background-color: rgb(27, 31, 31);
+    color: aqua;
     display: flex;
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
 
+}
+#dol{
+    grid-area: dol;
+    background-color: rgb(4, 41, 4);
+    color: black;
 }
 
 #nazwa{
